@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PikaPlayer Dev</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 10px 20px;
+    }
+    
+    #pikaplayer {
+      height: 100px;
+      width: 100%;
+      border-radius: 10px;
+      background-color: hsla(0,0%,49.4%,.3);
+      backdrop-filter: blur(2px);
+    }
+    #pikaplayer-internal {
+      height: 100%;
+    }
+    #pikaplayer-cover {
+      height: 100%;
+    }
+    #pikaplayer-cover > img {
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="pikaplayer">
+    <div id="pikaplayer-internal">
+      <div id="pikaplayer-cover">
+        <img src="https://i.loli.net/2020/08/13/3b7Qf6SxA2ytR4l.png" />
+      </div>
+      <div id="pikaplayer-mid">
+        <div id="pikaplayer-info">
+
+        </div>
+        <div id="pikaplayer-progress">
+
+        </div>
+      </div>
+      <div id="pikaplayer-control">
+
+      </div>
+    </div>
+  </div>
+  <script src="PikaPlayer.js"></script>
+  <script>
+    const pp = new PikaPlayer({
+      container: document.getElementById('pikaplayer'),
+      audio: [{
+        name: 'Test Use Music',
+        artist: 'Ayaka Neko',
+        url: 'https://neko.ayaka.moe/music/FlowerDance.flac',
+        cover: 'https://i.loli.net/2020/08/13/3b7Qf6SxA2ytR4l.png'
+      }]
+    })
+  </script>
+</body>
+
+</html>
