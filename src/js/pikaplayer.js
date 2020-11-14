@@ -8,6 +8,7 @@ class PikaPlayer {
         const img = document.createElement('img')
         // img.src = this.options.audio[0].cover
         div.appendChild(img)
+        img.classList.add('cover image-cover')
     }
 }
 
