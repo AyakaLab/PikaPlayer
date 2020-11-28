@@ -1,6 +1,6 @@
 {
   "name": "pikaplayer",
-  "version": "1.0.0-alphaA1",
+  "version": "1.0.0-alphaA2",
   "description": "A Beautiful Web Music Player",
   "main": "dist/pikaplayer.min.js",
   "style": "dist/pikaplayer.min.css",
